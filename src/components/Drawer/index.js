@@ -26,7 +26,7 @@ function Drawer({ onClose, onRemove, items = [], opened }) {
 
       for (let i = 0; i < cartItems.length; i++) {
         const item = cartItems[i];
-        await axios.delete('https://613b03c2110e000017a45421.mockapi.io/cart/' + item.id);
+        await axios.delete('https://613b03c2110e000017a45421.mockapi.io/cart' + item.id);
         await delay(1000);
       }
     } catch (error) {
